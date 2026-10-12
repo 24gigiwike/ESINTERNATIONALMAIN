@@ -453,82 +453,60 @@ footer {
   padding: 50px 28px;
 }
 
-/* Footer Columns */
-
-footer>div {
-  flex: 1;
-  min-width: 0;
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: 28px;
+  padding: 40px 5%;
+  background: #0B3D2E;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
-
-.footer-context {
-  flex: 1.5;
-}
-
-/* Footer Logo */
 
 .footer-logo p {
-  color: #FFFFFF;
-  font-family: "Manrope", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 800;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
 }
-
-/* Footer Description */
 
 .footer-text p {
   max-width: 280px;
   color: #CFE3D6;
-  font-size: 14px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 17px;
 }
-
-/* Social Media Icons */
 
 .footer-icons {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
-.footer-icons i {
+.footer-icons a {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #CFE3D6;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #CFE3D6;
-  border-radius: 50%;
-  color: #FFFFFF;
-  font-size: 14px;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
-.footer-icons i:hover {
-  background-color: #534063;
-  border-color: #534063;
-  color: #FFFFFF;
+.footer-icons a:hover {
+  background: #4F157F;
+  border-color: #4F157F;
 }
-
-/* Footer Headings */
 
 footer h5 {
   color: #CFE3D6;
-  font-family: "Manrope", sans-serif;
   font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
-
-/* Footer Lists */
 
 footer ul {
   list-style: none;
@@ -536,21 +514,17 @@ footer ul {
   margin: 0;
 }
 
-footer ul li {
-  color: #FFFFFF;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 12px;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-footer ul li:hover,
-footer ul li.active {
+footer li {
   color: #CFE3D6;
+  font-size: 13px;
+  margin-bottom: 9px;
+  cursor: pointer;
 }
 
-/* Contact Details */
+footer li:hover,
+footer li.active {
+  color: #fff;
+}
 
 .contact-us ul li {
   overflow-wrap: anywhere;
@@ -880,18 +854,21 @@ footer ul li.active {
 /* PARTNERSHIP PAGE */
 .partner-hero {
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7) 55%, rgba(0, 0, 0, 0.35)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
     url("./Youth Emp.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 530px;
+  min-height: 450px;
+  
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  color: white;
+  justify-content: flex-start;
+  
+  color: #fff;
   padding: 80px 40px;
+  
 }
 
 .partner-hero h1 {
@@ -1125,6 +1102,335 @@ footer ul li.active {
   line-height: 1.7;
 }
 
+/* SUPPORT */
+.support-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
+    url("./Youth Emp.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: #fff;
+  padding: 80px 40px;
+  
+}
+
+.support-hero h1 {
+  max-width: 720px;
+  font-size: 56px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.support-hero p {
+  text-align: center;
+  max-width: 560px;
+  color: #e0e9e2;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+.support-content {
+  background: #F6F8F4;
+  padding: 50px 5%;
+}
+
+.support-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.support-heading h2 {
+  color: #0B3D2E;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.support-heading p {
+  color: #5B6C62;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.card {
+  padding: 24px 22px;
+  background: #fff;
+  border: 1px solid #E0E8E1;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(4, 44, 24, 0.1);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #CFE3D6;
+  color: #0B3D2E;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: #0B3D2E;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #5B6C62;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.text-link {
+  color: #534063;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.text-link i {
+  margin-left: 6px;
+}
+
+.faq-section {
+  background: #fff;
+  padding:70px 7%;
+}
+
+.faq-layout,
+.contact-layout {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 55px;
+  max-width: 1080px;
+  margin: auto;
+  align-items: start
+}
+
+.faq-intro p {
+  margin-bottom: 22px
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px
+}
+
+.faq-item {
+  background: #F6F8F4;
+  border: 1px solid #E0E8E1;
+  border-radius: 9px;
+  overflow: hidden
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 44px 18px 20px;
+  position: relative;
+  font-weight: 700;
+  font-size: 15px
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none
+}
+
+.faq-item summary:after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  color: #534063;
+  font-size: 23px;
+  top: 13px
+}
+
+.faq-item[open] summary:after {
+  content: "−"
+}
+
+.faq-item p {
+  padding: 0 20px 18px;
+  color: #5B6C62;
+  font-size: 14px
+}
+
+.contact {
+  padding: 50px 5%;
+  background: #F6F8F4; 
+  
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.contact-copy h2 {
+  color: #0B3D2E;
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.contact-copy>p {
+  color: #5B6C62;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+.detail {
+  display: flex;
+  gap: 13px;
+  margin: 18px 0;
+  align-items: flex-start;
+}
+
+.detail i {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #CFE3D6;
+  color: #0B3D2E;
+  border-radius: 9px;
+}
+
+.detail strong,
+.detail span {
+  display: block;
+}
+
+.detail strong {
+  color: #0B3D2E;
+  font-size: 14px;
+}
+
+.detail span {
+  font-size: 14px;
+  color: #5B6C62;
+  overflow-wrap: anywhere;
+}
+
+.form {
+  background: #fff;
+  border: 1px solid #E0E8E1;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.form h3 {
+  color: #0B3D2E;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.form>p {
+  font-size: 14px;
+  color: #5B6C62;
+  margin-bottom: 22px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #D8E1D9;
+  border-radius: 7px;
+  padding: 12px 13px;
+  background: #fff;
+  color: #042C18;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #3C5D53;
+  box-shadow: 0 0 0 3px rgba(60, 93, 83, 0.12);
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 7px;
+  background: #0B3D2E;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #4F157F;
+}
+
+#form-note {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+
+
 @media (max-width: 768px) {
   
   
@@ -1293,9 +1599,6 @@ footer ul li.active {
     padding: 0 5%;
     box-sizing: border-box;
   }
-  
-  
-  
   
   
   
