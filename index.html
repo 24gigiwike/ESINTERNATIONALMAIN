@@ -195,64 +195,32 @@
             <p class="kicker">Voices of impact</p>
             <h2 id="voices-title">Stories That Shape Our Purpose</h2>
             <p>Every meaningful change begins with people. These are the voices and experiences that remind us why investing in the next generation matters.</p>
-            <p class="voices-note">Sample stories for layout review. These are not verified statements from participants, beneficiaries, or partners.</p>
           </div>
-          <!--
-            Replace the three portrait src values when approved photographs are ready.
-            TESTIMONIAL_IMAGE_01 = portrait-01.svg
-            TESTIMONIAL_IMAGE_02 = portrait-02.svg
-            TESTIMONIAL_IMAGE_03 = portrait-03.svg
-            Quotes, names, and roles below are fictional placeholders.
-          -->
-          <div class="voice-grid">
-            <figure class="voice">
-              <blockquote>
-                <p>What stayed with me was the room we were given to think, speak, and try. I left more certain about the kind of leader I want to become.</p>
-              </blockquote>
-              <figcaption>
-                <div class="voice-photo">
-                  <!-- TESTIMONIAL_IMAGE_01 -->
-                  <img src="portrait-01.svg" alt="Sample portrait placeholder, not a photograph of a participant" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="voice-id">
-                  <cite>Amaka Obi</cite>
-                  <span class="role">Programme participant, sample</span>
-                  <span class="voice-sample">Sample</span>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="voice">
-              <blockquote>
-                <p>We were looking for a partner that treats young people as contributors, not an audience. The conversations had that seriousness.</p>
-              </blockquote>
-              <figcaption>
-                <div class="voice-photo">
-                  <!-- TESTIMONIAL_IMAGE_02 -->
-                  <img src="portrait-02.svg" alt="Sample portrait placeholder, not a photograph of a participant" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="voice-id">
-                  <cite>David Okon</cite>
-                  <span class="role">Community collaborator, sample</span>
-                  <span class="voice-sample">Sample</span>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="voice">
-              <blockquote>
-                <p>I came in curious and left with a clearer sense of responsibility — to my ideas, and to the people around me.</p>
-              </blockquote>
-              <figcaption>
-                <div class="voice-photo">
-                  <!-- TESTIMONIAL_IMAGE_03 -->
-                  <img src="portrait-03.svg" alt="Sample portrait placeholder, not a photograph of a participant" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="voice-id">
-                  <cite>Zainab Yusuf</cite>
-                  <span class="role">Student participant, sample</span>
-                  <span class="voice-sample">Sample</span>
-                </div>
-              </figcaption>
-            </figure>
+          <div class="voice-carousel">
+            <button class="voice-arrow" id="voice-prev" type="button" aria-label="Previous testimonials">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M14.5 6.5 9 12l5.5 5.5"/></svg>
+            </button>
+            <div class="voice-viewport" id="voice-viewport">
+              <div class="voice-track" id="voice-track"></div>
+            </div>
+            <button class="voice-arrow" id="voice-next" type="button" aria-label="Next testimonials">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M9.5 6.5 15 12l-5.5 5.5"/></svg>
+            </button>
+          </div>
+          <div class="voice-modal" id="voice-modal" hidden>
+            <button class="voice-modal-backdrop" id="voice-modal-backdrop" type="button" aria-label="Close testimonial"></button>
+            <div class="voice-modal-panel" id="voice-dialog" role="dialog" aria-modal="true" aria-labelledby="voice-modal-name">
+              <button class="voice-modal-close" id="voice-modal-close" type="button" aria-label="Close">×</button>
+              <div class="voice-modal-scroll" id="voice-modal-scroll" tabindex="0"></div>
+              <div class="voice-modal-nav">
+                <button class="voice-modal-prev" id="voice-modal-prev" type="button" aria-label="Previous testimonial">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M14.5 6.5 9 12l5.5 5.5"/></svg>
+                </button>
+                <button class="voice-modal-next" id="voice-modal-next" type="button" aria-label="Next testimonial">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M9.5 6.5 15 12l-5.5 5.5"/></svg>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -311,12 +279,12 @@
           <div class="footer-text">
             <p>Empowering people, businesses, and communities through quality, innovation, and trusted solutions.</p>
           </div>
-          <div class="footer-icons" aria-hidden="true">
-            <span class="social"><svg class="glyph" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M14.7 10.2 22.4 1.5h-1.8l-6.7 7.3L8.1 1.5H1.5l8.1 11.2L1.5 22.5h1.8l7.1-7.7 5.6 7.7h6.6l-8-11.3zm-2.5 2.8-.8-1.1-6.5-8.8h2.8l5.3 7.1.8 1.1 6.8 9.2h-2.8l-5.6-7.5z"/></svg></span>
-            <span class="social"><svg class="glyph" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M14.2 21v-7.2h2.4l.4-2.8h-2.8V9.3c0-.8.2-1.4 1.4-1.4H17V5.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4v1.7H8.4v2.8h2.5V21h3.3z"/></svg></span>
-            <span class="social"><svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" focusable="false"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.4"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></svg></span>
-            <span class="social"><svg class="glyph" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 3.2A8.7 8.7 0 0 0 4.6 16.3L3.4 20.6l4.4-1.2A8.7 8.7 0 1 0 12 3.2zm4.8 12.3c-.2.6-1.1 1-1.6 1.1-.4.1-1 .1-2.8-.6-2.3-1-3.8-3.3-3.9-3.4-.1-.2-1-1.3-1-2.4s.6-1.7.8-1.9c.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .5.4.2.5.7 1.8.7 1.9.1.1 0 .3-.1.4l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1.9 2 1.2 2.3 1.3.3.1.4.1.6-.1.2-.2.7-.8.9-1 .2-.3.4-.2.6-.1.3.1 1.6.8 1.8.9.2.1.4.2.4.3.1.2 0 .7-.2 1.1z"/></svg></span>
-            <span class="social"><svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" focusable="false"><circle cx="12" cy="12" r="8.2"/><path d="M15.6 11.8c0 2.2-1.5 3.7-3.5 3.7-2.1 0-3.4-1.5-3.4-3.8 0-2.4 1.4-4 3.6-4 1.5 0 2.6.6 3.1 1.6"/><path d="M15.6 8.4v4.6"/></svg></span>
+          <div class="footer-icons">
+            <!-- OFFICIAL_EMAIL: no address is configured. Replace this span with <a class="social" href="mailto:ADDRESS"> when one is supplied. -->
+            <span class="social" role="img" aria-label="Email, address not yet available"><svg class="glyph" viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M4 6.5h16v11H4z"/><path fill="none" stroke="currentColor" stroke-width="1.7" d="m4.5 7 7.5 6 7.5-6"/></svg></span>
+            <!-- FACEBOOK_PAGE_URL: no official page is configured. Replace this span with <a class="social" href="URL" target="_blank" rel="noopener noreferrer"> when one is supplied. -->
+            <span class="social" role="img" aria-label="Facebook, link not yet available"><svg class="glyph" viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path fill="currentColor" d="M14.2 21v-7.2h2.4l.4-2.8h-2.8V9.3c0-.8.2-1.4 1.4-1.4H17V5.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4v1.7H8.4v2.8h2.5V21h3.3z"/></svg></span>
+            <a class="social" href="https://wa.me/2348105628912" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="glyph" viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path fill="currentColor" d="M12 3.2A8.7 8.7 0 0 0 4.6 16.3L3.4 20.6l4.4-1.2A8.7 8.7 0 1 0 12 3.2zm4.8 12.3c-.2.6-1.1 1-1.6 1.1-.4.1-1 .1-2.8-.6-2.3-1-3.8-3.3-3.9-3.4-.1-.2-1-1.3-1-2.4s.6-1.7.8-1.9c.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .5.4.2.5.7 1.8.7 1.9.1.1 0 .3-.1.4l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1.9 2 1.2 2.3 1.3.3.1.4.1.6-.1.2-.2.7-.8.9-1 .2-.3.4-.2.6-.1.3.1 1.6.8 1.8.9.2.1.4.2.4.3.1.2 0 .7-.2 1.1z"/></svg></a>
           </div>
         </div>
         <div class="quick-links">
@@ -350,9 +318,10 @@
         <div class="contact-us">
           <h5>Contact-Us</h5>
           <ul>
-            <li>16 Ideal drive street</li>
-            <li>Aladinma,Owerri </li>
-            <li>+234 81296532867</li>
+            <li>Plot 122 Ikenegbu, off Maris Junction, Owerri, Nigeria</li>
+            <li><a href="tel:+2348104903832">+234 810 490 3832</a></li>
+            <li><a href="tel:+2349168650937">+234 916 865 0937</a></li>
+            <li><a href="https://wa.me/2348105628912" target="_blank" rel="noopener noreferrer">+234 810 562 8912 (WhatsApp only)</a></li>
             <li>esinternational.org</li>
           </ul>
         </div>
@@ -361,6 +330,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <script src="testimonials.js" defer></script>
   <script src="site.js" defer></script>
 </body>
 
