@@ -90,7 +90,7 @@
       ]
     },
     {
-      name: "Name to be confirmed",
+      name: "Iwu Primus",
       role: "Tech Entrepreneur | Founder & CEO, GALIZY DIGITAL SERVICES LTD.",
       location: "Manila, Philippines",
       image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792680208/Galizy_ht90uy.jpg",
