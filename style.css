@@ -135,8 +135,8 @@ button:hover,
   padding: 8px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  flex-wrap: nowrap;
+  gap: 12px;
 }
 
 .site-header .logo {
@@ -228,13 +228,22 @@ button:hover,
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 8px;
+  margin-left: auto;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 6px;
 }
 
 .nav-donate {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   min-height: 40px;
   padding: 0 16px;
   background: #0B3D2E;
@@ -244,6 +253,7 @@ button:hover,
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav-donate:hover {
@@ -321,11 +331,6 @@ button:hover,
     gap: 8px;
     padding-left: 12px;
     padding-right: 12px;
-  }
-
-  .nav-donate {
-    padding: 0 10px;
-    letter-spacing: 0.04em;
   }
 }
 
@@ -2049,21 +2054,40 @@ footer li.active {
 
 @media (max-width: 900px) {
   .site-header-inner {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
-  .site-header .logo { grid-column: 1; }
-
   .site-nav {
-    grid-column: 2;
-    justify-self: end;
+    position: static;
+    width: 0;
+    min-width: 0;
+    flex: 0 0 0;
+    margin-left: 0;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .nav-donate {
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
   }
 
   .nav-toggle {
-    grid-column: 3;
     display: inline-flex;
+    flex-shrink: 0;
   }
 
   body.nav-open {
@@ -2072,16 +2096,6 @@ footer li.active {
 
   body.nav-open .nav-backdrop {
     display: block;
-  }
-
-  .site-nav {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
   }
 
   .navlink {
@@ -2288,6 +2302,15 @@ footer li.active {
 
   footer {
     padding: 36px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-donate {
+    min-height: 40px;
+    padding: 0 8px;
+    font-size: 11px;
+    letter-spacing: 0.03em;
   }
 }
 
