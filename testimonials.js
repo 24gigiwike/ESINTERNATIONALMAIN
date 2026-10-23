@@ -114,6 +114,7 @@
     {
       name: "David Alayo Olaniyi",
       role: "Full-Stack Developer",
+      location: "Lagos, Nigeria",
       image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792680209/Dave_msidlu.jpg",
       paragraphs: [
         "My experience with ES International, especially through ES Venture Lab, has been a great part of my growth in technology. It gave me the opportunity to expand my knowledge of full-stack development and gain more practical experience in building web applications.",
