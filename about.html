@@ -40,7 +40,7 @@
 
   <div id="page-body">
     <main id="main">
-      <section class="about-hero">
+      <section class="about-hero" data-es-image="ABOUT_BANNER_IMAGE_URL">
         <h1>Driven by Purpose
           <br>
           <span>Built for Impact</span>
@@ -52,7 +52,7 @@
         <div class="about-who-img">
           <picture>
             <source srcset="gallery-3.webp" type="image/webp">
-            <img src="gallery-3.png" alt="ES International team" width="1268" height="1240" loading="lazy" decoding="async">
+            <img data-es-image="ABOUT_WHO_ARE_WE_IMAGE_URL" src="gallery-3.png" alt="ES International team" width="1268" height="1240" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="about-who-text">
@@ -70,7 +70,7 @@
         <div class="about-why-img">
           <picture>
             <source srcset="gallery-7.webp" type="image/webp">
-            <img src="gallery-7.png" alt="Why we exist" width="1132" height="1390" loading="lazy" decoding="async">
+            <img data-es-image="ABOUT_WHY_WE_EXIST_IMAGE_URL" src="gallery-7.png" alt="Why we exist" width="1132" height="1390" loading="lazy" decoding="async">
           </picture>
         </div>
       </section>
@@ -232,6 +232,7 @@
     </footer>
   </div>
 
+  <script src="image-config.js" defer></script>
   <script src="site.js" defer></script>
 </body>
 
