@@ -226,6 +226,107 @@ button:hover,
 .site-nav {
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-donate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  background: #0B3D2E;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-donate:hover {
+  background: #4F157F;
+  color: #fff;
+}
+
+.donate-page {
+  padding: 56px 6% 72px;
+  max-width: 920px;
+}
+
+.donate-page h1 {
+  max-width: 16ch;
+  margin: 8px 0 14px;
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  line-height: 1.12;
+}
+
+.donate-lead {
+  max-width: 64ch;
+  margin-bottom: 28px;
+  color: #3C5D53;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.donate-box {
+  max-width: 560px;
+  padding: 28px 24px 24px;
+  border-top: 3px solid #0B3D2E;
+  background: #F6F8F4;
+}
+
+.donate-box h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.donate-box p {
+  margin: 0;
+  color: #3C5D53;
+  line-height: 1.55;
+}
+
+.donate-contact {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 0 18px;
+  background: #0B3D2E;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+.donate-contact:hover {
+  background: #4F157F;
+  color: #fff;
+}
+
+.donate-alt {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.donate-alt a {
+  color: #4F157F;
+  text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+  .site-header-inner {
+    gap: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .nav-donate {
+    padding: 0 10px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .navlink {
@@ -1947,7 +2048,21 @@ footer li.active {
 }
 
 @media (max-width: 900px) {
+  .site-header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+
+  .site-header .logo { grid-column: 1; }
+
+  .site-nav {
+    grid-column: 2;
+    justify-self: end;
+  }
+
   .nav-toggle {
+    grid-column: 3;
     display: inline-flex;
   }
 
@@ -1960,6 +2075,16 @@ footer li.active {
   }
 
   .site-nav {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .navlink {
     position: absolute;
     left: 0;
     right: 0;
@@ -1971,19 +2096,16 @@ footer li.active {
     visibility: hidden;
     transform: translateY(-6px);
     transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
-  }
-
-  .site-nav.is-open {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-  }
-
-  .navlink {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
     padding: 8px 0 12px;
+  }
+
+  .site-nav.is-open .navlink {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
   }
 
   .navlink,
