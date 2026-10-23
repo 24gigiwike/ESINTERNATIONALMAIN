@@ -112,7 +112,7 @@
       ]
     },
     {
-      name: "Dave",
+      name: "David Alayo Olaniyi",
       role: "Full-Stack Developer",
       image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792680209/Dave_msidlu.jpg",
       paragraphs: [
