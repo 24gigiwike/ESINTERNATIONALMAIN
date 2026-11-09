@@ -15,7 +15,7 @@
       name: "Ifeoma Okere",
       role: "Social Worker",
       location: "Darwin, Australia",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792678329/ifeoma_okere_dhls2n.jpg",
+      image: "https://media.broadbrand.com.ng/image/ifeoma_okere_dhls2n.jpg",
       paragraphs: [
         "My journey with ES International began in 2015 when I joined the youth arm known as the Emperors Club, which focuses on entrepreneurship and leadership skills.",
         "Joining the club helped me improve my leadership skills, refined my skills and shaped me into who I am today.",
@@ -27,7 +27,7 @@
       name: "Chiemezie Umeh",
       role: "Entrepreneur & Academic Consultant",
       location: "Enugu, Nigeria",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792678330/chimezie_umeh_g0svgg.jpg",
+      image: "https://media.broadbrand.com.ng/image/chimezie_umeh_g0svgg.jpg",
       paragraphs: [
         "When I relocated from Enugu to Owerri in 2007, nothing prepared me for the experience and exposure that followed. At the time, very few people truly knew my story. It was only at the end of my tenure that my closest friend discovered I was living as a houseboy, a houseboy who dared to dream and defied the odds stacked against him.",
         "We were told that SLADDS was meant strictly for senior students, a domain reserved for the brightest minds. Yet, immediately after completing junior secondary school, I joined SLADDS and quickly grew to love it. I never missed a meeting, eventually representing Holy Ghost College in numerous debate and quiz competitions where we shared in both victories and losses.",
@@ -44,7 +44,7 @@
       role: "Student Leader | Poet | Mentor and Leadership Trainer",
       location: "Owerri, Nigeria",
       title: "FROM SLADDS TO A JOURNEY OF LEADERSHIP, SERVICE AND IMPACT",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792678330/prosper_chimezirim_bha7g7.jpg",
+      image: "https://media.broadbrand.com.ng/image/prosper_chimezirim_bha7g7.jpg",
       paragraphs: [
         "My journey with SLADDS, the teenage arm of ES International, remains one of the most defining parts of my personal development. It was more than a platform for literary expression; it was a training ground that helped shape my leadership skills, initiative, confidence, and ability to work with people.",
         "As a member and later Zonal President, I had the privilege of coordinating various student leaders and schools across the zone. Through these experiences, I learned the importance of teamwork, responsibility, communication, and leading with purpose. It was also within SLADDS that I discovered my poetic voice and began to appreciate the power of words as tools for inspiration and transformation.",
@@ -58,7 +58,7 @@
       name: "Chukwuka Uwakwe",
       role: "Architect",
       location: "Stuttgart, Germany",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792678330/Chukwuka_Uwakwe_x4ry9c.jpg",
+      image: "https://media.broadbrand.com.ng/image/Chukwuka_Uwakwe_x4ry9c.jpg",
       paragraphs: [
         "My journey with ES International began in secondary school through its teens' arm, SLADDS, where I had the privilege of serving as Zonal President during the 2012/2013 academic session. This experience played a significant role in shaping my leadership, public speaking, communication, and organisational skills, while instilling in me a strong sense of responsibility, confidence, and commitment to personal development.",
         "Beyond leadership, SLADDS provided an environment that encouraged intellectual curiosity, critical thinking, teamwork, and the confidence to pursue ambitious goals. Today, while pursuing a master's degree in Architecture at the State Academy of Fine Arts Stuttgart (ABK Stuttgart), Germany, I continue to draw on the values and foundational skills developed during those formative years. My academic and professional journey in architecture, design, and the built environment has taken me beyond borders, but the lessons of leadership, discipline, and service remain invaluable.",
@@ -69,7 +69,7 @@
       name: "Uwakwe Ikechukwu",
       role: "Software Engineer",
       location: "Lagos, Nigeria",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792678329/Uwakwe_Ikechukwu_a0vlgf.jpg",
+      image: "https://media.broadbrand.com.ng/image/Uwakwe_Ikechukwu_a0vlgf.jpg",
       paragraphs: [
         "I work as an AI engineer for a company globally renowned to be at the heart of the development of foundational models, which provide stable bases for the SOTA consumer grade AI models everyone loves.",
         "We have a distributed team of international engineers and I am able to communicate and contribute adequately due to my communication and interpersonal skills, the foundation of which was built and nurtured by SLADDS during my secondary school programmes. ES International birthed the SLADDS programme which provided ample, globally competitive communication and social skills to students in their formative ages, essentially equipping them for productive community engagements.",
@@ -82,7 +82,7 @@
       name: "Sade Glory Adeola",
       role: "Entrepreneur",
       location: "Owerri, Nigeria",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792679880/Sade_Glory_iyo54d.jpg",
+      image: "https://media.broadbrand.com.ng/image/Sade_Glory_iyo54d.jpg",
       paragraphs: [
         "I started a great journey with ES International at Amakohia Comprehensive Secondary School, Owerri, where I served as the School Literary Coordinator. Through ES International teens arm, SLADDS, I built strong confidence, communication skills, and leadership abilities.",
         "The organisation has played a pivotal role in shaping my business mindset by teaching me how to write a business plan, draft proposals, and pitch ideas confidently. These early experiences expanded my perspective and equipped me with essential skills that continue to guide me today as a Food Entrepreneur and Founder of Deola Resources.",
@@ -93,7 +93,7 @@
       name: "Iwu Primus",
       role: "Tech Entrepreneur | Founder & CEO, GALIZY DIGITAL SERVICES LTD.",
       location: "Manila, Philippines",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792680208/Galizy_ht90uy.jpg",
+      image: "https://media.broadbrand.com.ng/image/Galizy_ht90uy.jpg",
       paragraphs: [
         "My journey with ES International began during my secondary school years through its teens arm, SLADDS, and continued through my time with the Emperors Club- the youth arm.",
         "Serving in key executive roles—including Zonal Provost, First President of the SLADDS Club at Emmanuel College, Owerri, and Noble Head of The Emperors Club—provided me with a strong foundation in public speaking, debating, leadership, and effective communication. These early leadership experiences nurtured my potential, instilling essential qualities of confidence, discipline, accountability, and decision-making during my formative years.",
@@ -104,7 +104,7 @@
       name: "Oguh Evan C",
       role: "Brand Identity & Visual Designer | Director, BoldMark Creations",
       location: "Owerri, Nigeria",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792680208/ogu_evans_u1bu9p.jpg",
+      image: "https://media.broadbrand.com.ng/image/ogu_evans_u1bu9p.jpg",
       paragraphs: [
         "My journey with ES Int'l began during my secondary school days, where I developed solid public-speaking, debate, and leadership skills whilst severing as the zonal president, leading/coordinating 30+ schools. It was indeed an experience that shaped my confidence, communication, sense of responsibility and a good start to leverage in becoming who I am today and even more.",
         "I was opportuned to gain access to the world of UI/UX design through the ES Venture lab programmes, where I gained my preliminary skills and have leveraged on it to further my career as a product/web designer, adding to my visual/brand identity design skills.",
@@ -115,7 +115,7 @@
       name: "David Alayo Olaniyi",
       role: "Full-Stack Developer",
       location: "Lagos, Nigeria",
-      image: "https://res.cloudinary.com/dtkluxukm/image/upload/v1792680209/Dave_msidlu.jpg",
+      image: "https://media.broadbrand.com.ng/image/Dave_msidlu.jpg",
       paragraphs: [
         "My experience with ES International, especially through ES Venture Lab, has been a great part of my growth in technology. It gave me the opportunity to expand my knowledge of full-stack development and gain more practical experience in building web applications.",
         "I'm grateful for the opportunity, support, and exposure ES International has given me. It has encouraged me to keep learning, improving my skills, and pursuing my goal of becoming a better full-stack developer."
