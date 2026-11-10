@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -646,6 +647,61 @@ button:hover,
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #4F157F;
+}
+
+.home-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 48px;
+  padding: 40px 6%;
+  background: #F6F8F4;
+  border-top: 1px solid #E0E8E1;
+}
+
+.home-band h2 {
+  margin: 8px 0 8px;
+  color: #0B3D2E;
+  font-size: clamp(1.55rem, 2.6vw, 2.05rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.home-band p {
+  max-width: 40rem;
+  color: #3C5D53;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.home-band .button {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.home-band-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 22px;
+  flex-shrink: 0;
+}
+
+.home-band-link {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4F157F;
+  border-bottom: 1px solid #4F157F;
+}
+
+.home-band-link:hover {
+  color: #0B3D2E;
+  border-bottom-color: #0B3D2E;
+}
+
+.home-band-support {
+  background: #fff;
 }
 
 .voices {
@@ -2205,9 +2261,15 @@ footer li.active {
 
   .voices,
   .cta-text,
-  .newsletter {
+  .newsletter,
+  .home-band {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .home-band {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .voices {
