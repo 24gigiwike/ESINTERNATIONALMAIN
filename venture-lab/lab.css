@@ -380,6 +380,53 @@ button, input { font: inherit; }
   text-transform: uppercase;
 }
 
+.lab-source {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.lab-filter-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.lab-facts {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 8px 16px;
+  margin: 18px 0;
+}
+
+.lab-facts dt,
+.lab-facts dd {
+  margin: 0;
+}
+
+.lab-facts dt {
+  color: var(--green);
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lab-facts dd {
+  color: var(--ink);
+}
+
+.lab-action-note {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .lab-thumb {
   display: block;
   width: 100%;
@@ -615,7 +662,8 @@ button, input { font: inherit; }
 @media (max-width: 600px) {
   :root { --lab-gutter: 20px; }
 
-  .lab-toolbar {
+  .lab-toolbar,
+  .lab-filter-stack {
     flex-direction: column;
     align-items: stretch;
   }

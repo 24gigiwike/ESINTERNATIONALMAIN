@@ -2871,3 +2871,240 @@ body.voice-open {
 .future .programme-points p + p {
   margin-top: 14px;
 }
+
+.sdg-list {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sdg-item {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 14px 16px;
+  padding: 16px 0;
+  border-top: 1px solid #E0E8E1;
+}
+
+.sdg-num {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  background: #0B3D2E;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.sdg-item h4 {
+  margin: 0 0 6px;
+  color: #0B3D2E;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.sdg-item h4 a {
+  color: #4F157F;
+  border-bottom: 1px solid #4F157F;
+}
+
+.sdg-item h4 a:hover {
+  color: #0B3D2E;
+  border-bottom-color: #0B3D2E;
+}
+
+.sdg-official,
+.sdg-note,
+.skillup-hint {
+  color: #3C5D53;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.sdg-item p + p,
+.sdg-note {
+  margin-top: 8px;
+}
+
+.skillup-gallery {
+  margin-top: 16px;
+}
+
+.skillup-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skillup-open {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: #F6F8F4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.skillup-open img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #E0E8E1;
+}
+
+.skillup-open.is-missing {
+  display: grid;
+  place-items: center;
+  min-height: 140px;
+  padding: 16px;
+  color: #3C5D53;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.skillup-open.is-missing img {
+  display: none;
+}
+
+.skillup-modal {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 20px 16px;
+  border: 0;
+  background: rgba(4, 44, 24, 0.92);
+  color: #fff;
+}
+
+.skillup-modal::backdrop {
+  background: rgba(4, 44, 24, 0.92);
+}
+
+.skillup-modal[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillup-panel {
+  display: flex;
+  flex-direction: column;
+  width: min(960px, 100%);
+  max-height: 100%;
+}
+
+.skillup-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.skillup-count,
+.skillup-panel figcaption {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skillup-count {
+  margin-right: auto;
+}
+
+.skillup-panel figcaption {
+  margin-top: 10px;
+}
+
+.skillup-panel figure {
+  margin: 0;
+}
+
+.skillup-panel img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 220px);
+  margin: 0 auto;
+  object-fit: contain;
+  background: #042C18;
+}
+
+.skillup-panel img.is-missing {
+  display: none;
+}
+
+.skillup-fallback {
+  margin: 0;
+  padding: 28px 16px;
+  background: #F6F8F4;
+  color: #3C5D53;
+  text-align: center;
+}
+
+.skillup-fallback[hidden] {
+  display: none;
+}
+
+.skillup-close,
+.skillup-prev,
+.skillup-next {
+  min-height: 48px;
+  padding: 0 16px;
+  border: 0;
+  background: #4F157F;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.skillup-close:hover,
+.skillup-prev:hover,
+.skillup-next:hover {
+  background: #0B3D2E;
+}
+
+@media (max-width: 800px) {
+  .skillup-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .skillup-grid,
+  .sdg-item {
+    grid-template-columns: 1fr;
+  }
+
+  .skillup-toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skillup-count {
+    grid-column: 1 / -1;
+    margin-right: 0;
+    order: -1;
+  }
+
+  .skillup-prev,
+  .skillup-next,
+  .skillup-close {
+    width: 100%;
+  }
+
+  .skillup-close {
+    grid-column: 1 / -1;
+  }
+}
