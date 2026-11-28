@@ -123,6 +123,18 @@
     }
   ];
 
+  var nigeria = [];
+  var abroad = [];
+  people.forEach(function (person) {
+    if (person.location && person.location.endsWith(", Nigeria")) nigeria.push(person);
+    else abroad.push(person);
+  });
+  people = [];
+  while (nigeria.length || abroad.length) {
+    if (nigeria.length) people.push(nigeria.shift());
+    if (abroad.length) people.push(abroad.shift());
+  }
+
   var root = document.querySelector(".voices");
   if (!root) return;
 
